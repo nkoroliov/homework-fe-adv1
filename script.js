@@ -31,7 +31,7 @@ console.log(`Випадкова знижка: ${discount}%`);
 const priceWithDiscount = (sumOfProducts - (sumOfProducts / 100 * discount)).toFixed(2);
 console.log(`Сума до оплати зі знижкою: ${priceWithDiscount} грн`);
 
-const netProfit = ((sumOfProducts / 2) - priceWithDiscount).toFixed(2);
+const netProfit = (priceWithDiscount - sumOfProducts / 2).toFixed(2);
 console.log(`Чистий прибуток: ${netProfit} грн`);
 
 console.log(`
